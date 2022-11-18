@@ -1,0 +1,17 @@
+[
+	{
+		"name": "MACETA 01",
+		"price": 30999,
+		"id": 1
+	},
+	{
+		"name": "MACETA 02",
+		"price": 22999,
+		"id": 2
+	},
+	{
+		"name": "MACETA 03",
+		"price": 13999,
+		"id": 3
+	}
+]

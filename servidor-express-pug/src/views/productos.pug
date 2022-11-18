@@ -1,0 +1,22 @@
+html
+    head 
+        link(rel="stylesheet", href="styles.css")
+        title ProductAPI with PUG
+    body
+        nav.nav 
+            ul
+                li 
+                    a(href="/") Agregar producto
+                li    
+                    a(href="/productos") Obtener productos
+        div.productsContainer
+            each producto in productos
+                div.productCard
+                    img.productImg(src= producto.thumbnail)
+                    h3.prductName= producto.name
+                    div.infoContainer
+                        span $
+                        span.productPrice= producto.price
+                    div.infoContainer
+                        span Id: 
+                        span.productPrice= producto.id

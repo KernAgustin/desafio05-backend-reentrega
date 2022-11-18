@@ -1,0 +1,35 @@
+html
+    head 
+        link(rel="stylesheet", href="styles.css")
+        title ProductAPI with PUG
+    body
+        nav.nav 
+            ul
+                li 
+                    a(href="/") Agregar producto
+                li    
+                    a(href="/productos") Obtener productos
+
+        div.container
+            h1 Agregar un producto.
+            form#form
+                label Nombre
+                    input(
+                        id="nombreProducto",
+                        type="text",
+                        name="nombre",
+                        placeholder="Ingrese el nombre del producto")
+                label Precio
+                    input(
+                        id="precioProducto",
+                        type="text",
+                        name="precio",
+                        placeholder="Ingrese el precio del producto")
+                label Thumbnail
+                    input(
+                        id="thumbnailProducto",
+                        type="text",
+                        name="nombre",
+                        placeholder="Ingrese el link de la imagen")
+                button(type="submit") Enviar
+        script(src="main.js")         

@@ -1,0 +1,10 @@
+<div class="productsContainer">
+	{{#each productos}}
+		<div class="productCard">
+			<img class="productImg" src={{this.thumbnail}} alt="" />
+			<h3 class="productName">{{this.name}}</h3>
+			<span class="ProductPrice">Price: ${{this.price}}</span>
+			<span class="productPrice">Id: {{this.id}}</span>
+		</div>
+	{{/each}}
+</div>
